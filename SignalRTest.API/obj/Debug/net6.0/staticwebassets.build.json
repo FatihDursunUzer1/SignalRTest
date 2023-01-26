@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "NmKlSmVTPE9c0mS1yGQYPwyTglrOZQFaoEMyGBYWTKA=",
+  "Source": "SignalRTest.API",
+  "BasePath": "_content/SignalRTest.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
