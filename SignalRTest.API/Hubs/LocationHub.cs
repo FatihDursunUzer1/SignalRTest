@@ -7,7 +7,7 @@ namespace SignalRTest.API.Hubs
 	{
 		public async Task SendUserLocation(string userId, Models.Location location)
 		{
-			await Clients.All.SendAsync("LocationMessage",userId,location);
+			await Clients.All.SendAsync("location",userId,location);
 		}
 	}
 }

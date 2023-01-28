@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
+using SignalRTest.API.Constants;
 using SignalRTest.API.Hubs;
 using SignalRTest.API.Models;
 
@@ -22,7 +23,7 @@ namespace SignalRTest.API.Controllers
         [HttpPost]
         public async Task<bool> TakeLocation(string userId,Location location)
         {
-           await _hubContext.Clients.All.SendAsync("location", userId, location.Latitude,location.Longitude);
+           await _hubContext.Clients.All.SendAsync(HubConstants.SendLocation, userId, location.Latitude,location.Longitude);
             return true;
         }
     }

@@ -12,8 +12,10 @@
 
   <ItemGroup>
     <None Remove="Hubs\" />
+    <None Remove="Constants\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Hubs\" />
+    <Folder Include="Constants\" />
   </ItemGroup>
 </Project>
